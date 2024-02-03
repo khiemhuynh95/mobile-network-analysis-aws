@@ -1,7 +1,7 @@
 # Mobile Network Data Processing with AWS Cloud Services
 ![Architecture Diagram](diagram.png)
 
-This project leverages AWS cloud services to transform mobile network data for insightful analytics. The workflow involves uploading CSV files to Amazon S3, which triggers a Lambda function to put records into a Kinesis DataStream. Subsequently, a Glue job implemented with PySpark consumes the stream, aggregates, and transforms the data, enabling comprehensive mobile network analytics based on parameters such as signal strength, GPS accuracy, and operator performance. 
+This project leverages AWS cloud services to transform real-time mobile network data for insightful analytics. The workflow involves uploading CSV files to Amazon S3, which triggers a Lambda function to put records into a Kinesis DataStream. Subsequently, a Glue job implemented with PySpark consumes the stream, aggregates, and transforms the data, enabling comprehensive mobile network analytics based on parameters such as signal strength, GPS accuracy, and operator performance. 
 
 ## Requirements
 
