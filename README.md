@@ -2,6 +2,15 @@
 ![Architecture Diagram](diagram.png)
 
 This project leverages AWS cloud services to transform mobile network data for insightful analytics. The workflow involves uploading CSV files to Amazon S3, which triggers a Lambda function to put records into a Kinesis DataStream. Subsequently, a Glue job implemented with PySpark consumes the stream, aggregates, and transforms the data, enabling comprehensive mobile network analytics based on parameters such as signal strength, GPS accuracy, and operator performance. 
+
+## Requirements
+
+Before using this project, ensure you meet the following requirements:
+
+- **Prior working knowledge of AWS cloud and services**
+- **Prior programming experience in Python and PySpark**
+- **Basic understanding of streaming concepts using PySpark**
+
 ## Workflow Overview
 
 1. **Upload CSV Files to S3**: Users upload CSV files containing mobile network data to an S3 bucket.
